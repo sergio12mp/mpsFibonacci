@@ -2,18 +2,23 @@ package org.mps.Fibonacci;
 
 public class Fibonacci {
 
-    public int compute(int value) {
-        int result;
+    public long compute(int value) {
 
         if (value < 0) {
             throw new RuntimeException("The value is negative " + value);
         }
+        if (value > 92) {
+            throw new RuntimeException("The value is too big " + value);
+        }
 
-        if ((value == 0) || (value == 1))
-            result = value;
-        else
-            result = (compute(value - 1) + compute(value - 2));
+        long next = 1, actual = 0, temp;
 
-        return result;
+        for (long i = 1; i <= value; i++) {
+            temp = actual;
+            actual = next;
+            next = next + temp;
+        }
+
+        return actual;
     }
 }
