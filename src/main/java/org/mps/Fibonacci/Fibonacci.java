@@ -1,6 +1,15 @@
 package org.mps.Fibonacci;
 
 public class Fibonacci {
+    /**
+     *
+     * Clase que calcula el @value fibonacci
+     *
+     * @author sergioM
+     *
+     * @value Numero de la sucesiones realizadas
+     * @actual Término correspondiente a la cantidad de sucesiones realizadas
+     */
 
     public long compute(int value) {
 

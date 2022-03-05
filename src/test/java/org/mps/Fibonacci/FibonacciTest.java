@@ -5,6 +5,19 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+
+/**
+ * Fibonacci Test Cases:
+ * fibonacci 0 = 0
+ * fibonacci 1 = 1
+ * fibonacci 2 = 1
+ * fibonacci 10 = 55
+ * fibonacci 40 = 12586269025
+ * fibonacci <0 = exception
+ * fibonacci >92 = exception
+ */
+
+
 public class FibonacciTest {
 
     private Fibonacci fibonacci;
